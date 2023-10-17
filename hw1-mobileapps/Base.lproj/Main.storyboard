@@ -17,48 +17,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-Lj-Uac">
-                                <rect key="frame" x="96.666666666666686" y="139" width="200" height="200"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lqg-Fj-iZG">
+                                <rect key="frame" x="96.666666666666686" y="99" width="200" height="423"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4ck-k8-3EM" userLabel="TitleBatman">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="260"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batman" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MG-3T-AaT">
+                                                <rect key="frame" x="58.333333333333329" y="0.0" width="82.999999999999986" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-Lj-Uac">
+                                                <rect key="frame" x="0.0" y="60" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="UWY-fS-6xR"/>
+                                                    <constraint firstAttribute="height" constant="200" id="ypG-ho-mjD"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="X7K-Zc-Fyv" userLabel="Buttons">
+                                        <rect key="frame" x="0.0" y="280" width="200" height="143"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BT-ib-rhy" userLabel="My back story">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="My backstory"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTC-Zt-1bg">
+                                                <rect key="frame" x="0.0" y="54.333333333333314" width="200" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Weakness"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyO-Xk-zsJ" userLabel="My bestfriend">
+                                                <rect key="frame" x="0.0" y="108.66666666666669" width="200" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="My bestfriend"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="UWY-fS-6xR"/>
-                                    <constraint firstAttribute="height" constant="200" id="ypG-ho-mjD"/>
+                                    <constraint firstItem="X7K-Zc-Fyv" firstAttribute="centerX" secondItem="Lqg-Fj-iZG" secondAttribute="centerX" id="C8j-CL-7kB"/>
+                                    <constraint firstItem="4ck-k8-3EM" firstAttribute="centerX" secondItem="Lqg-Fj-iZG" secondAttribute="centerX" id="dky-T5-eQG"/>
                                 </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BT-ib-rhy" userLabel="My back story">
-                                <rect key="frame" x="133" y="359" width="127" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="My backstory"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTC-Zt-1bg">
-                                <rect key="frame" x="145.66666666666666" y="414" width="102" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Weakness"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyO-Xk-zsJ" userLabel="My bestfriend">
-                                <rect key="frame" x="131.66666666666666" y="469" width="129.99999999999997" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="My bestfriend"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batman" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MG-3T-AaT">
-                                <rect key="frame" x="155" y="79" width="83" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fyZ-Lj-Uac" firstAttribute="top" secondItem="4MG-3T-AaT" secondAttribute="bottom" constant="30" id="35d-4Y-Ehq"/>
-                            <constraint firstItem="fyZ-Lj-Uac" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="7yB-LD-xd0"/>
-                            <constraint firstItem="gTC-Zt-1bg" firstAttribute="top" secondItem="4BT-ib-rhy" secondAttribute="bottom" constant="20" id="Hl9-JX-hXV"/>
-                            <constraint firstItem="lyO-Xk-zsJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OAP-Qh-RaW"/>
-                            <constraint firstItem="fyZ-Lj-Uac" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OlB-qU-jbk"/>
-                            <constraint firstItem="4BT-ib-rhy" firstAttribute="top" secondItem="fyZ-Lj-Uac" secondAttribute="bottom" constant="20" id="WDF-RO-ob3"/>
-                            <constraint firstItem="4MG-3T-AaT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z0G-8f-Ub4"/>
-                            <constraint firstItem="4BT-ib-rhy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z8M-0o-hPb"/>
-                            <constraint firstItem="lyO-Xk-zsJ" firstAttribute="top" secondItem="gTC-Zt-1bg" secondAttribute="bottom" constant="20" id="o8I-M6-vSi"/>
-                            <constraint firstItem="gTC-Zt-1bg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wUt-jw-Nv2"/>
+                            <constraint firstItem="Lqg-Fj-iZG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4tK-4g-nCw"/>
+                            <constraint firstItem="Lqg-Fj-iZG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Gjb-Ur-4dO"/>
                         </constraints>
                     </view>
                 </viewController>
